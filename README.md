@@ -130,17 +130,7 @@ cd frontend_user
 npm install
 npm start
 
-🔐 Environment Variables
 
-Create a .env file in backend:
-
-RPC_URL=
-PRIVATE_KEY=
-CONTRACT_ADDRESS=
-PORT=5000
-
-
-⚠️ Never push .env to GitHub.
 
 👩‍💻 Team Members
 
@@ -185,5 +175,14 @@ Automated
 Real-time
 
 Trustless
+🛠 Manual Verification & Test Report
+Since the PayStream Protocol is designed for real-time financial settlement, we conducted rigorous manual testing on the HeLa Testnet to ensure mathematical precision and contract security.
 
+1.⁠ ⁠Stream Integrity & Math Verification
+Per-Second Calculation: Verified that the annual salary (e.g., 120,000 HLUSD) is correctly divided by the total seconds in a year to create a seamless emission.
+
+Real-Time Accrual: Confirmed via the Employee Portal that the "Available to Withdraw" balance increments every second without lag.
+
+Zero-Balance Initialization: Ensured new streams start exactly at 0.000 upon contract execution.
+‎Read more
 Built with ❤️ on HeLa Network.
